@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>DESIGN CAT - Photo Frame Works</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #050505;
+  color: white;
+}
+
+header {
+  background: #080808;
+  padding: 15px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #222;
+}
+
+.logo {
+  width: 150px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: #ffbd4a;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 0;
+}
+
+.section-head p {
+  color: #ffbd4a;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+.section-head h1 {
+  color: #ffbd4a;
+  font-size: 42px;
+  margin-top: 5px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.card {
+  background: #101010;
+  border: 1px solid #8a5b00;
+  border-radius: 10px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.03);
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #aaa;
+  border-top: 1px solid #222;
+}
+
+@media (max-width: 800px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  nav a {
+    margin-left: 10px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 550px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-head h1 {
+    font-size: 32px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+  <a class="logo" href="index.html">
+    <img src="design-cat-logo.jpg" alt="DESIGN CAT Logo">
+  </a>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="photo-restoration.html">Photo Restoration</a>
+    <a href="photo-frame.html">Photo Frame</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#order">Order</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+
+</header>
+
+<main>
+
+  <div class="container">
+
+    <div class="section-head">
+      <p>PHOTO FRAME WORK</p>
+      <h1>Photo Frame Works</h1>
+    </div>
+
+    <div class="card-grid">
+
+      <div class="card">
+        <img src="photo-frame-1.jpg.jpg" alt="Photo Frame Work 1">
+      </div>
+
+      <div class="card">
+        <img src="photo-frame-2.jpg.jpg" alt="Photo Frame Work 2">
+      </div>
+
+      <div class="card">
+        <img src="photo-frame-3.jpg.jpg" alt="Photo Frame Work 3">
+      </div>
+
+      <div class="card">
+        <img src="photo-frame-4.jpg.jpg" alt="Photo Frame Work 4">
+      </div>
+
+      <div class="card">
+        <img src="photo-frame-5.jpg.jpg" alt="Photo Frame Work 5">
+      </div>
+
+      <div class="card">
+        <img src="photo-frame-6.jpg.jpg" alt="Photo Frame Work 6">
+      </div>
+
+      <div class="card">
+        <img src="photo-frame-7.jpg.jpg" alt="Photo Frame Work 7">
+      </div>
+
+    </div>
+
+  </div>
+
+</main>
+
+<footer>
+  © 2026 DESIGN CAT • All Rights Reserved
+</footer>
+
+</body>
+</html>
