@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mementos | DESIGN CAT</title>
+
+<style>
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  background:#050505;
+  color:white;
+  font-family:Arial, sans-serif;
+}
+
+header{
+  background:#080808;
+  padding:20px;
+  text-align:center;
+  border-bottom:1px solid #3b2a00;
+}
+
+.logo{
+  width:150px;
+  max-width:80%;
+}
+
+h1{
+  color:#f5b82e;
+  margin:15px 0 5px;
+}
+
+.subtitle{
+  color:#ddd;
+  margin-bottom:20px;
+}
+
+.back{
+  display:inline-block;
+  color:#f5b82e;
+  text-decoration:none;
+  margin:10px 0 25px;
+}
+
+.gallery{
+  max-width:1200px;
+  margin:auto;
+  padding:20px;
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:25px;
+}
+
+.card{
+  background:#0b0b0b;
+  border:1px solid #6b4b00;
+  border-radius:12px;
+  padding:10px;
+  box-shadow:0 0 15px rgba(245,184,46,0.15);
+}
+
+.card img{
+  width:100%;
+  display:block;
+  border-radius:8px;
+}
+
+@media(max-width:700px){
+  .gallery{
+    grid-template-columns:1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<img src="design-cat-logo.jpg"
+     alt="DESIGN CAT Logo"
+     class="logo">
+
+<h1>Mementos</h1>
+
+<p class="subtitle">
+Premium Memento & Trophy Designs
+</p>
+
+<a href="index.html" class="back">
+← Back to Home
+</a>
+
+</header>
+
+<div class="gallery">
+
+<div class="card">
+<img src="Mementos-design1.jpg" alt="Memento Design 1">
+</div>
+
+<div class="card">
+<img src="Mementos-design2.jpg" alt="Memento Design 2">
+</div>
+
+<div class="card">
+<img src="Mementos-design3.jpg" alt="Memento Design 3">
+</div>
+
+<div class="card">
+<img src="Mementos-design4.jpg" alt="Memento Design 4">
+</div>
+
+</div>
+
+</body>
+</html>
